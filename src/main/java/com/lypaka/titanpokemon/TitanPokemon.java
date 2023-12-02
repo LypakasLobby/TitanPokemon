@@ -23,8 +23,8 @@ public class TitanPokemon {
     /**
      * TODO
      *
-     * Store how many times x player has defeated y titan
-     * Increase difficulty of titan for each defeat
+     * Store how many times x player has defeated y titan - DONE
+     * Increase difficulty of titan for each defeat - DONE
      *      Defeating a titan more than once boosts the level of the ability they grant
      *          Max value so players don't tap W and go 45 blocks/second
      * Tick listener for making sure player always has x effect from y titan in proper situations
@@ -35,15 +35,15 @@ public class TitanPokemon {
      *      what species is currently being used to represent that titan
      *
      *  API:
-     *      TitanSpawnEvent
-     *      TitanDefeatEvent
+     *      TitanSpawnEvent - DONE
+     *      TitanDefeatEvent - DONE
      *      TitanAbilityEvent
      */
 
     public TitanPokemon() throws IOException, ObjectMappingException {
 
         Path dir = ConfigUtils.checkDir(Paths.get("./config/titanpokemon"));
-        String[] files = new String[]{"titanpokemon.conf"};
+        String[] files = new String[]{"titanpokemon.conf", "storage.conf"};
         configManager = new BasicConfigManager(files, dir, TitanPokemon.class, MOD_NAME, MOD_ID, logger);
         configManager.init();
         ConfigGetters.load();

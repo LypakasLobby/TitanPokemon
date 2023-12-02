@@ -4,9 +4,9 @@ import java.util.List;
 
 public class StonyCliffTitan extends Titan {
 
-    public StonyCliffTitan (List<String> species, String ability) {
+    public StonyCliffTitan (String id, List<String> species, String ability) {
 
-        super(species, ability);
+        super(id, species, ability);
 
     }
 

@@ -4,9 +4,9 @@ import java.util.List;
 
 public class QuakingEarthTitan extends Titan {
 
-    public QuakingEarthTitan (List<String> species, String ability) {
+    public QuakingEarthTitan (String id, List<String> species, String ability) {
 
-        super(species, ability);
+        super(id, species, ability);
 
     }
 

@@ -4,9 +4,9 @@ import java.util.List;
 
 public class OpenSkyTitan extends Titan {
 
-    public OpenSkyTitan (List<String> species, String ability) {
+    public OpenSkyTitan (String id, List<String> species, String ability) {
 
-        super(species, ability);
+        super(id, species, ability);
 
     }
 

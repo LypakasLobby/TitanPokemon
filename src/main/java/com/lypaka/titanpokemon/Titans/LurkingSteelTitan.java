@@ -4,9 +4,9 @@ import java.util.List;
 
 public class LurkingSteelTitan extends Titan {
 
-    public LurkingSteelTitan (List<String> species, String ability) {
+    public LurkingSteelTitan (String id, List<String> species, String ability) {
 
-        super(species, ability);
+        super(id, species, ability);
 
     }
 

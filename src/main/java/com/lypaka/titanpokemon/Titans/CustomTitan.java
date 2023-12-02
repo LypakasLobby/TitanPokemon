@@ -6,9 +6,9 @@ public class CustomTitan extends Titan {
 
     private final String name;
 
-    public CustomTitan (String name, List<String> species, String ability) {
+    public CustomTitan (String name, String id, List<String> species, String ability) {
 
-        super(species, ability);
+        super(id, species, ability);
         this.name = name;
 
     }
