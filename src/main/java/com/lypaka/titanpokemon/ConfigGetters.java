@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class ConfigGetters {
 
+    public static String disableItemID;
     public static boolean ignoreNonSurvival;
     public static boolean lockToUUID;
     public static String message;
@@ -19,6 +20,7 @@ public class ConfigGetters {
 
     public static void load() throws ObjectMappingException {
 
+        disableItemID = TitanPokemon.configManager.getConfigNode(0, "Disable-Item").getString();
         ignoreNonSurvival = TitanPokemon.configManager.getConfigNode(0, "Ignore-Non-Survival").getBoolean();
         lockToUUID = TitanPokemon.configManager.getConfigNode(0, "Lock-To-UUID").getBoolean();
         message = TitanPokemon.configManager.getConfigNode(0, "Message").getString();

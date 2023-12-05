@@ -20,6 +20,7 @@ public class BlockInteractListeners {
         if (event.getHand() != Hand.MAIN_HAND) return;
 
         PlayerEntity player = event.getPlayer();
+        if (player.inventory.mainInventory.toString().contains(ConfigGetters.disableItemID)) return;
         int playerY = player.getPosition().getY() - 1; // -1 to get the Y level of the block that the player is actually standing on
         int eventY = event.getPos().getY();
         if (eventY > playerY) return; // stops the code from firing if the player is shift left clicking a block above their y level (so it only triggers at feet)
@@ -56,6 +57,7 @@ public class BlockInteractListeners {
         if (event.getHand() != Hand.MAIN_HAND) return;
 
         PlayerEntity player = event.getPlayer();
+        if (player.inventory.mainInventory.toString().contains(ConfigGetters.disableItemID)) return;
         int playerY = player.getPosition().getY() - 1; // -1 to get the Y level of the block that the player is actually standing on
         int eventY = event.getPos().getY();
         if (eventY <= playerY) return; // stops the code from firing if the player is shift right clicking a block at or below their feet
