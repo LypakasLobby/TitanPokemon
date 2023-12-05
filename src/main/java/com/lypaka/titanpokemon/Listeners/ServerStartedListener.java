@@ -20,6 +20,7 @@ public class ServerStartedListener {
         MinecraftForge.EVENT_BUS.register(new BlockInteractListeners());
         MinecraftForge.EVENT_BUS.register(new ServerTickListener());
 
+        Pixelmon.EVENT_BUS.register(new BattleStartListener());
         Pixelmon.EVENT_BUS.register(new CatchListener());
         Pixelmon.EVENT_BUS.register(new DefeatListener());
         Pixelmon.EVENT_BUS.register(new PixelmonSpawnListener());

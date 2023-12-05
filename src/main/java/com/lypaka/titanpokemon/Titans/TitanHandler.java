@@ -52,6 +52,12 @@ public class TitanHandler {
 
     }
 
+    public static String getPlayerSpawnedFor (Pokemon pokemon) {
+
+        return pokemon.getPersistentData().getString("SpawnedPlayer");
+
+    }
+
     public static boolean isTitanPokemon (Pokemon pokemon) {
 
         return pokemon.getPersistentData().getBoolean("TitanPokemon");
