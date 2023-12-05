@@ -49,7 +49,7 @@ public class ServerTickListener {
                         if (map.containsKey("StonyCliffTitan")) {
 
                             int defeatAmount = map.get("StonyCliffTitan");
-                            int amplifier = Math.min(15, (defeatAmount * 5));
+                            int amplifier = Math.min(3, defeatAmount);
                             EffectInstance speed = new EffectInstance(Effects.SPEED, 30, amplifier);
                             if (!player.getActivePotionEffects().contains(speed)) {
 
