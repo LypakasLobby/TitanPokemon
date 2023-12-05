@@ -61,7 +61,7 @@ public class ServerTickListener {
 
                     }
 
-                } else if (!player.isOnGround() && !player.isElytraFlying() && !player.isInWater() && !player.isPotionActive(Effects.LEVITATION)) {
+                } /*else if (player.getMotion().y < 0) {*/ else if (!player.isOnGround() && !player.isElytraFlying() && !player.isInWater() && !player.isPotionActive(Effects.LEVITATION)) {
 
                     if (ConfigGetters.playerTitanMap.containsKey(player.getUniqueID().toString())) {
 

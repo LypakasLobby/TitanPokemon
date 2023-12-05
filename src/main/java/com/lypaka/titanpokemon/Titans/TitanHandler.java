@@ -23,10 +23,14 @@ public class TitanHandler {
         boolean isTitan = false;
         for (Titan titan : titans) {
 
-            if (titan.getSpecies().contains(species)) {
+            for (String s : titan.getSpecies()) {
 
-                isTitan = true;
-                break;
+                if (s.replace(" ", "").equalsIgnoreCase(species.replace(" ", ""))) {
+
+                    isTitan = true;
+                    break;
+
+                }
 
             }
 
@@ -97,10 +101,14 @@ public class TitanHandler {
         Titan titan = null;
         for (Titan t : titans) {
 
-            if (t.getSpecies().contains(pokemon.getSpecies().getName())) {
+            for (String s : t.getSpecies()) {
 
-                titan = t;
-                break;
+                if (s.replace(" ", "").equalsIgnoreCase(pokemon.getSpecies().getName().replace(" ", ""))) {
+
+                    titan = t;
+                    break;
+
+                }
 
             }
 
