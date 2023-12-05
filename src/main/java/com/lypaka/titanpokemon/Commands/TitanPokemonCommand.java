@@ -18,6 +18,7 @@ public class TitanPokemonCommand {
     public static void onCommandRegistration (RegisterCommandsEvent event) {
 
         new ReloadCommand(event.getDispatcher());
+        new SpawnCommand(event.getDispatcher());
 
         ConfigCommand.register(event.getDispatcher());
 

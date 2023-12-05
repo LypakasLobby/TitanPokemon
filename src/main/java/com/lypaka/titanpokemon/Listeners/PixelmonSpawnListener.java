@@ -48,7 +48,7 @@ public class PixelmonSpawnListener {
                             int playersHighestLevel = StorageProxy.getParty(player).getHighestLevel();
                             int modifier = 15;
                             titanLevel = titanSpawnEvent.getTitanLevel();
-                            if (titanLevel == 2) modifier = 30;
+                            if (titanLevel == 2) modifier = 25;
                             if (titanLevel >= 3) modifier = 50;
                             int mod = modifier + playersHighestLevel;
                             pokemon.setLevel(mod);
