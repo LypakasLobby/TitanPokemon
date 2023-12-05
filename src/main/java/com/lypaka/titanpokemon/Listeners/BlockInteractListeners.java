@@ -1,6 +1,7 @@
 package com.lypaka.titanpokemon.Listeners;
 
 import com.lypaka.titanpokemon.ConfigGetters;
+import net.minecraft.command.impl.EffectCommand;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -33,11 +34,9 @@ public class BlockInteractListeners {
                 if (map.containsKey("LurkingSteelTitan")) {
 
                     int defeatAmount = map.get("LurkingSteelTitan");
-                    int duration = Math.min(30, (defeatAmount * 10));
-                    System.out.println("duration on jump bosot == " + duration);
-                    int amplifier = Math.min(30, (defeatAmount * 10));
-                    System.out.println("amplifier on jump boost == " + amplifier);
-                    EffectInstance effectInstance = new EffectInstance(Effects.JUMP_BOOST, duration, amplifier);
+                    int duration = Math.min(600, ((defeatAmount * 10) * 20));
+                    int amplifier = Math.min(3, defeatAmount);
+                    EffectInstance effectInstance = new EffectInstance(Effects.JUMP_BOOST, duration, Math.max(1, amplifier-1));
                     if (!player.getActivePotionEffects().contains(effectInstance)) {
 
                         player.addPotionEffect(effectInstance);
@@ -72,9 +71,9 @@ public class BlockInteractListeners {
                 if (map.containsKey("FalseDragonTitan")) {
 
                     int defeatAmount = map.get("FalseDragonTitan");
-                    int duration = Math.min(30, (defeatAmount * 10));
+                    int duration = Math.min(600, ((defeatAmount * 2) * 20));
                     int amplifier = Math.min(15, (defeatAmount * 5));
-                    EffectInstance effectInstance = new EffectInstance(Effects.LEVITATION, duration, amplifier);
+                    EffectInstance effectInstance = new EffectInstance(Effects.LEVITATION, duration, Math.max(1, amplifier-1));
 
                     String id = player.world.getBlockState(event.getPos()).getBlock().getRegistryName().toString();
                     if (!id.equalsIgnoreCase("minecraft:air")) {

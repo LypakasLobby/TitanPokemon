@@ -31,8 +31,8 @@ public class ServerTickListener {
 
                             if (player.inventory.mainInventory.toString().contains(ConfigGetters.disableItemID)) return;
                             int defeatAmount = map.get("OpenSkyTitan");
-                            int amplifier = Math.min(15, (defeatAmount * 5));
-                            EffectInstance dolphinsGrace = new EffectInstance(Effects.DOLPHINS_GRACE, 30, amplifier);
+                            int amplifier = Math.min(9, (defeatAmount * 3));
+                            EffectInstance dolphinsGrace = new EffectInstance(Effects.DOLPHINS_GRACE, 30, Math.max(1, amplifier-1));
                             if (!player.getActivePotionEffects().contains(dolphinsGrace)) {
 
                                 player.addPotionEffect(dolphinsGrace);
@@ -53,7 +53,7 @@ public class ServerTickListener {
                             if (player.inventory.mainInventory.toString().contains(ConfigGetters.disableItemID)) return;
                             int defeatAmount = map.get("StonyCliffTitan");
                             int amplifier = Math.min(3, defeatAmount);
-                            EffectInstance speed = new EffectInstance(Effects.SPEED, 30, amplifier);
+                            EffectInstance speed = new EffectInstance(Effects.SPEED, 30, Math.max(1, amplifier-1));
                             if (!player.getActivePotionEffects().contains(speed)) {
 
                                 player.addPotionEffect(speed);
@@ -74,7 +74,7 @@ public class ServerTickListener {
                             if (player.inventory.mainInventory.toString().contains(ConfigGetters.disableItemID)) return;
                             int defeatAmount = map.get("QuakingEarthTitan");
                             int amplifier = Math.min(15, (defeatAmount * 5));
-                            EffectInstance falling = new EffectInstance(Effects.SLOW_FALLING, 30, amplifier);
+                            EffectInstance falling = new EffectInstance(Effects.SLOW_FALLING, 30, Math.max(1, amplifier-1));
                             if (!player.getActivePotionEffects().contains(falling)) {
 
                                 player.addPotionEffect(falling);
