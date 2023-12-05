@@ -3,6 +3,7 @@ package com.lypaka.titanpokemon.Listeners;
 import com.lypaka.titanpokemon.TitanPokemon;
 import com.lypaka.titanpokemon.Titans.TitanHandler;
 import com.pixelmonmod.pixelmon.Pixelmon;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.server.FMLServerStartedEvent;
@@ -15,6 +16,8 @@ public class ServerStartedListener {
     public static void onServerStarted (FMLServerStartedEvent event) throws ObjectMappingException {
 
         TitanHandler.loadTitans();
+
+        MinecraftForge.EVENT_BUS.register(new BlockInteractListeners());
 
         Pixelmon.EVENT_BUS.register(new CatchListener());
         Pixelmon.EVENT_BUS.register(new DefeatListener());

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Specification-Title: titanpokemon
+Specification-Version: 1
+Implementation-Title: TitanPokemon
+Implementation-Version: 1.16.5-1.0.0
+Implementation-Timestamp: 2023-12-05T00:09:42-0600
+
