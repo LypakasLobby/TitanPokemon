@@ -34,7 +34,9 @@ public class BlockInteractListeners {
 
                     int defeatAmount = map.get("LurkingSteelTitan");
                     int duration = Math.min(30, (defeatAmount * 10));
-                    int amplifier = Math.min(3, (defeatAmount));
+                    System.out.println("duration on jump bosot == " + duration);
+                    int amplifier = Math.min(30, (defeatAmount * 10));
+                    System.out.println("amplifier on jump boost == " + amplifier);
                     EffectInstance effectInstance = new EffectInstance(Effects.JUMP_BOOST, duration, amplifier);
                     if (!player.getActivePotionEffects().contains(effectInstance)) {
 
