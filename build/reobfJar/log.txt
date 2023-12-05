@@ -83,11 +83,11 @@ Remapping final jar
 Remapping jar...  3%
 Remapping jar... 12%
 Remapping jar... 21%
-Remapping jar... 30%
-Remapping jar... 42%
-Remapping jar... 52%
-Remapping jar... 61%
-Remapping jar... 73%
+Remapping jar... 32%
+Remapping jar... 41%
+Remapping jar... 50%
+Remapping jar... 62%
+Remapping jar... 71%
 Remapping jar... 82%
 Remapping jar... 91%
 Remapping jar... 100%
