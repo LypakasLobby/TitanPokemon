@@ -2,11 +2,6 @@ package com.lypaka.titanpokemon;
 
 import com.lypaka.lypakautils.ConfigurationLoaders.BasicConfigManager;
 import com.lypaka.lypakautils.ConfigurationLoaders.ConfigUtils;
-import net.minecraft.entity.monster.SpiderEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.network.datasync.DataParameter;
-import net.minecraft.network.datasync.DataSerializers;
-import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraftforge.fml.common.Mod;
 import ninja.leaping.configurate.objectmapping.ObjectMappingException;
 import org.apache.logging.log4j.LogManager;
