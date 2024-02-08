@@ -22,8 +22,9 @@ public class TitanPokemon {
 
     public TitanPokemon() throws IOException, ObjectMappingException {
 
+        logger.info("This mod was written by me (Lypaka) and is available for free - and is open sourced on my GitHub! If you PURCHASED this mod from someone, please report them to me in my dev Discord: https://discord.gg/6kKcz2kWgF");
         Path dir = ConfigUtils.checkDir(Paths.get("./config/titanpokemon"));
-        String[] files = new String[]{"titanpokemon.conf", "storage.conf"};
+        String[] files = new String[]{"titanpokemon.conf", "storage.conf", "blacklist.conf"};
         configManager = new BasicConfigManager(files, dir, TitanPokemon.class, MOD_NAME, MOD_ID, logger);
         configManager.init();
         ConfigGetters.load();
