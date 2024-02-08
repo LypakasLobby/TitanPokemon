@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TitanPokemon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TitanPokemon.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TitanPokemon.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TitanPokemon.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.lypaka.TitanPokemon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.lypaka.TitanPokemon.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.lypaka.TitanPokemon.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.lypaka.TitanPokemon.test.iml" />
     </modules>
   </component>
 </project>

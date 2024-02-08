@@ -32,7 +32,7 @@ public class ConfigGetters {
             disableItemIDs.put("Swimming", "anvil");
             disableItemIDs.put("High Jumping", "anvil");
             disableItemIDs.put("Gliding", "anvil");
-            disableItemIDs.put("Climing", "anvil");
+            disableItemIDs.put("Climbing", "anvil");
             TitanPokemon.configManager.getConfigNode(0, "Disable-Item").setValue(null);
             TitanPokemon.configManager.getConfigNode(0, "Disable-Items").setValue(disableItemIDs);
             TitanPokemon.configManager.save();
