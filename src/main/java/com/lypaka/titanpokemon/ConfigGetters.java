@@ -24,7 +24,6 @@ public class ConfigGetters {
 
     public static void load() throws ObjectMappingException {
 
-        //disableItemID = TitanPokemon.configManager.getConfigNode(0, "Disable-Item").getString();
         disableItemIDs = new HashMap<>();
         if (TitanPokemon.configManager.getConfigNode(0, "Disable-Items").isVirtual()) {
 
